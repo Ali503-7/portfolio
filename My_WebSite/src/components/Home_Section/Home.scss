@@ -1,0 +1,43 @@
+
+@import '../../assets/Scss/Color/Colors.scss';
+@import '../../assets/Scss/global/global.scss';
+
+.Home {
+  .contaner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: max(5rem, 11vh);
+
+
+    .top {
+      margin-bottom: 2.5em;
+    }
+    .bottom {
+      margin-top: 2.5em;
+    }
+    .top ,.bottom {
+      color: $green;
+      opacity: .3;
+      font-family: $WIM;
+    }
+
+    .mid {
+      margin-left: 3em;
+
+      .name {
+        font-family: $Header;
+        font-size: 5em;
+        color: white;
+        line-height: 110px;
+      }
+
+      .workAs {
+        font-family: $Header;
+        color: $lightest-slate;
+        text-transform: capitalize;
+        font-size: 1.1em;
+        max-width: 560px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../assets/Scss/Color/Colors.scss';
+
+.Email {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  flex-direction: column;
+  height: fit-content;
+  padding: 0px;
+  width: 10em;
+
+  .line {
+    width: 1px;
+    height: 5em;
+    background-color: $light-slate;
+  }
+
+  .email {
+    transition: .5s;
+    transform: rotate(90deg);
+    margin-bottom: 10em;
+
+    a {
+      transition: .5s;
+      color: $lightest-slate;
+      font-style: italic;
+      font-family: $Email;
+      letter-spacing: 5px;
+      font-size: larger;
+
+    }
+
+    &:hover {
+      transform: rotate(90deg) translateX(-10px);
+
+      & a {
+        color: #5dccff !important;
+      }
+    }
+  }
+}
