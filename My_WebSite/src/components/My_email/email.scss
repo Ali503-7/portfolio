@@ -19,12 +19,15 @@
     transition: .5s;
     transform: rotate(90deg);
     margin-bottom: 10em;
-
+    
     a {
+      width: calc(100% + 50px);
+      display: block;
       transition: .5s;
       color: $lightest-slate;
       font-style: italic;
-      font-family: $Email;
+      font-family: $WIM;
+      font-weight: 100;
       letter-spacing: 5px;
       font-size: larger;
 

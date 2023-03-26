@@ -11,10 +11,10 @@ function Header() {
   const resume = useRef(null);
 
   useEffect(() => {
-    Hacker(About,3)
-    Hacker(Experience,3);
-    Hacker(Contact,3);
-    Hacker(resume,3);
+    Hacker(About,6)
+    Hacker(Experience,6);
+    Hacker(Contact,6);
+    Hacker(resume,6);
   }, [])
   
 

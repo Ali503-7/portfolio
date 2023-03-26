@@ -37,7 +37,7 @@ const Hacker = (ref, speed) => {
     if (iterations >= ref.current.dataset.value.length) clearInterval(interval);
 
     iterations += 1 / speed;
-  }, 60);
+  }, 30);
 };
 
 export default Hacker;

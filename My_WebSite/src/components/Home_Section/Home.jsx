@@ -6,15 +6,17 @@ function Home() {
   const MyName = useRef(null);
   const AboutMe = useRef(null);
   const AboutMe2 = useRef(null);
+  const AboutMe3 = useRef(null);
   const openTag = useRef(null)
   const closeTag = useRef(null)
 
   useEffect(() => {
-    Hacker(MyName,3);
-    Hacker(openTag, 1);
-    Hacker(closeTag, 1);
-    Hacker(AboutMe ,1);
-    Hacker(AboutMe2, 1);
+    Hacker(MyName,4);
+    Hacker(openTag, 3);
+    Hacker(closeTag, 3);
+    Hacker(AboutMe ,2);
+    Hacker(AboutMe2, 2);
+    Hacker(AboutMe3,2);
   });
 
   return (
@@ -28,22 +30,19 @@ function Home() {
             ALI MOHAMED
           </div>
           <div className="workAs">
-            <p
-              ref={AboutMe}
-              data-value="I have experience in building responsive"
-            >
-              I have experience in building responsive
+            <p ref={AboutMe} data-value="I have experience in building">
+              I have experience in building
             </p>
-            <p
-              ref={AboutMe2}
-              data-value="and dynamic websites and web applications."
-            >
-              and dynamic websites and web applications.
+            <p ref={AboutMe2} data-value="responsive and dynamic websites">
+              responsive and dynamic websites
+            </p>
+            <p ref={AboutMe3} data-value="and web applications.">
+              and web applications.
             </p>
           </div>
         </div>
         <div className="bottom" ref={closeTag} data-value="</Hi, My Name's>">
-          {"<"}Hi, My Name's{">"}
+          {"<"}/Hi, My Name's{">"}
         </div>
       </div>
     </section>

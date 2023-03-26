@@ -3,6 +3,9 @@
 @import '../../assets/Scss/global/global.scss';
 
 .Home {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
   .contaner {
     flex-direction: column;
     align-items: flex-start;

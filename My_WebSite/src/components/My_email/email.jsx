@@ -15,9 +15,9 @@ function email() {
     <div className="Email contaner">
       <span className="email">
         <a
-          href="mailto:alimoali354@gmail.com"
+          href="mailto:alimoali576@gmail.com"
           ref={Email}
-          data-value="alimoali354@gmail.com"
+          data-value="alimoali576@gmail.com"
         >
           alimoali354@gmail.com
         </a>
