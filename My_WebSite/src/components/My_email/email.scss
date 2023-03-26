@@ -2,12 +2,11 @@
 
 .Email {
   position: absolute;
-  right: 0px;
+  right: -0px;
   bottom: 0px;
   flex-direction: column;
-  height: fit-content;
   padding: 0px;
-  width: 10em;
+  width: 11em;
 
   .line {
     width: 1px;
@@ -30,7 +29,7 @@
       font-weight: 100;
       letter-spacing: 5px;
       font-size: larger;
-
+      animation: upAndDown 2s infinite alternate-reverse ease-in-out;
     }
 
     &:hover {
@@ -39,6 +38,30 @@
       & a {
         color: #5dccff !important;
       }
+    }
+  }
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .Email{
+    transform: rotate(270deg);
+    a {
+      font-size: smaller !important;
+    }
+    .line {
+      height: 3em;
+    }
+    .email {
+      margin-bottom: 7em;
     }
   }
 }

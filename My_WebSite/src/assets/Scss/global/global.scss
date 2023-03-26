@@ -7,12 +7,15 @@
   right: 0;
   top: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .contaner {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 30px 20px;
   display: flex;
   align-items: center;
 }

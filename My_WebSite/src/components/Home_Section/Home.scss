@@ -3,13 +3,10 @@
 @import '../../assets/Scss/global/global.scss';
 
 .Home {
-  position: absolute;
-  top:50%;
-  transform: translateY(-50%);
+  margin: auto 0px;
   .contaner {
     flex-direction: column;
     align-items: flex-start;
-    padding-top: max(5rem, 11vh);
 
 
     .top {
@@ -40,7 +37,28 @@
         text-transform: capitalize;
         font-size: 1.1em;
         max-width: 560px;
+        line-height: 2em;
+        margin-top: 1.5em;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Home {
+    margin: 50px 0px auto 0px;
+    .mid {
+      margin-left: 1.5em !important;
+    }
+    .name {
+      font-size: 2.5em !important;
+      line-height: 1em !important;
+    }
+    .workAs {
+      font-size: .9em !important;
+    }
+    .top,.bottom {
+      font-size: .9em;
     }
   }
 }
