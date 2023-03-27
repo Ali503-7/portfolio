@@ -20,11 +20,13 @@
   .right {
     .burger {
       height: 20px;
-      display: none;  
+      display: none;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+      z-index: 1000;
+      position: sticky;
 
       span {
         transition: 1s;
@@ -58,12 +60,15 @@
     display: flex;
     align-items: center;
     gap: 2em;
+
     .link {
       font-family: $Header;
+
       ol {
         display: flex;
         flex-direction: row;
         gap: 2em;
+
         a {
           transition: .5s;
           text-decoration: none;
@@ -82,7 +87,7 @@
       }
 
     }
-    
+
   }
 }
 
@@ -90,6 +95,7 @@
   .burger {
     display: flex !important;
   }
+
   .links {
     display: none !important;
   }
