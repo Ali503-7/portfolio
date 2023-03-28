@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import Hacker from "../../assets/JSAnimation/hackingTransition";
-import Nav from "../NavBar/nav";
+import Hacker from '../../../assets/JSAnimation/hackingTransition.js'
+import Nav from '../NavBar/nav'
 import "./Header.scss";
 
 function Header() {
@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <>
-      <Nav showManu={showManu}/>
+      <Nav showManu={showManu} />
       <header className="header">
         <div className="contaner">
           <div className="logo">
@@ -52,8 +52,16 @@ function Header() {
                     </a>
                   </li>
                   <li>
+                    <a href="#Skills">
+                      <span className="navNumber">02.</span>{" "}
+                      <span data-value="Skills" ref={About}>
+                        Skills
+                      </span>
+                    </a>
+                  </li>
+                  <li>
                     <a href="#Experience">
-                      <span className="navNumber">02.</span>
+                      <span className="navNumber">03.</span>
                       <span data-value="Experience" ref={Experience}>
                         Experience
                       </span>
@@ -61,8 +69,7 @@ function Header() {
                   </li>
                   <li>
                     <a href="#Contact">
-                      <span className="navNumber">03.</span>
-
+                      <span className="navNumber">04.</span>
                       <span data-value="Contact" ref={Contact}>
                         Contact
                       </span>

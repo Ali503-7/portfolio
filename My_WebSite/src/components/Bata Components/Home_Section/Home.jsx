@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Hacker from "../../assets/JSAnimation/hackingTransition";
+import Hacker from "../../../assets/JSAnimation/hackingTransition";
 import "./Home.scss";
 
 function Home() {

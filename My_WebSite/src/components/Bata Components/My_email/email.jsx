@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import Hacker from '../../assets/JSAnimation/hackingTransition';
+import Hacker from '../../../assets/JSAnimation/hackingTransition'
 import './email.scss'
 
 function email() {
