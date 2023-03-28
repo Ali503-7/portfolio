@@ -19,16 +19,16 @@ function Nav({ showManu }) {
 
       <div className="bar" data-delay=".6s"></div>
       <div className="bar" data-delay=".7s">
-        <button>ABOUT</button>
+        <a href="youtube.com">ABOUT</a>
       </div>
       <div className="bar" data-delay=".8s">
-        <button>SKILLS</button>
+        <a href="youtube.com">SKILLS</a>
       </div>
       <div className="bar" data-delay=".9s">
-        <button>EXPERIENCE</button>
+        <a href="youtube.com">EXPERIENCE</a>
       </div>
       <div className="bar" data-delay="1.1s">
-        <button>CONTACT</button>
+        <a href="youtube.com">CONTACT</a>
       </div>
       <div className="bar" data-delay="1.2s"></div>
       <div className="bar" data-delay="1.3s"></div>

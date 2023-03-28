@@ -29,7 +29,7 @@ function Header() {
         <div className="contaner">
           <div className="logo">
             <img
-              src="../../../public/imgs/logs/ALimo_logo_with_the_Ali_bf9017df-bfbb-440f-a14f-7291e4ff8088.png"
+              src="/imgs/logs/ALimo_logo_with_the_Ali_bf9017df-bfbb-440f-a14f-7291e4ff8088.png"
               alt="#"
             />
           </div>
