@@ -1,10 +1,12 @@
-import React, { useRef, useState, useEffect } from "react";
-import Hacker from '../../../assets/JSAnimation/hackingTransition.js'
-import Nav from '../NavBar/nav'
+import React, { useRef, useState, useEffect, useContext } from "react";
+import Hacker from "../../../assets/JSAnimation/hackingTransition.js";
+import Nav from "../NavBar/nav";
+import { PageSwiper, pages } from "../../../App.jsx";
 import "./Header.scss";
 
 function Header() {
   const [showManu, setShowMenu] = useState(false);
+  const { whereAMi } = useContext(PageSwiper);
 
   const About = useRef(null);
   const Experience = useRef(null);
@@ -27,7 +29,7 @@ function Header() {
       <Nav showManu={showManu} />
       <header className="header">
         <div className="contaner">
-          <div className="logo">
+          <div className="logo" onClick={() => whereAMi(pages.HOME_PAGE.NAME)}>
             <img
               src="/imgs/logs/ALimo_logo_with_the_Ali_bf9017df-bfbb-440f-a14f-7291e4ff8088.png"
               alt="#"
@@ -44,7 +46,10 @@ function Header() {
               <div className="link">
                 <ol>
                   <li>
-                    <a href="#About">
+                    <a
+                      href="#About"
+                      onClick={() => whereAMi(pages.HOME_PAGE.NAME)}
+                    >
                       <span className="navNumber">01.</span>{" "}
                       <span data-value="About" ref={About}>
                         About
@@ -52,7 +57,10 @@ function Header() {
                     </a>
                   </li>
                   <li>
-                    <a href="#Skills">
+                    <a
+                      href="#Skills"
+                      onClick={() => whereAMi(pages.SKILLS_PAGE.NAME)}
+                    >
                       <span className="navNumber">02.</span>{" "}
                       <span data-value="Skills" ref={About}>
                         Skills

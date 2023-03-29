@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
+import { PageSwiper, pages } from "../../../App.jsx";
 import "./nav.scss";
 
 function Nav({ showManu }) {
   const delayData = useRef(null);
+  const { whereAMi } = useContext(PageSwiper);
 
   useEffect(() => {
     const listOfDivs = delayData.current.children;
@@ -19,13 +21,17 @@ function Nav({ showManu }) {
 
       <div className="bar" data-delay=".6s"></div>
       <div className="bar" data-delay=".7s">
-        <a href="youtube.com">ABOUT</a>
+        <a href="#ABOUT" onClick={() => whereAMi(pages.HOME_PAGE.NAME)}>
+          ABOUT
+        </a>
       </div>
       <div className="bar" data-delay=".8s">
-        <a href="youtube.com">SKILLS</a>
+        <a href="#SKILLS" onClick={() => whereAMi(pages.SKILLS_PAGE.NAME)}>
+          SKILLS
+        </a>
       </div>
       <div className="bar" data-delay=".9s">
-        <a href="youtube.com">EXPERIENCE</a>
+        <a href="#EXPERIENCE">EXPERIENCE</a>
       </div>
       <div className="bar" data-delay="1.1s">
         <a href="youtube.com">CONTACT</a>

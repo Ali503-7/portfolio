@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import Hacker from "../../../assets/JSAnimation/hackingTransition";
 import "./Home.scss";
 
 function Home() {
+
   const MyName = useRef(null);
   const AboutMe = useRef(null);
   const AboutMe2 = useRef(null);
@@ -12,8 +13,8 @@ function Home() {
 
   useEffect(() => {
     Hacker(MyName,4);
-    Hacker(openTag, 3);
-    Hacker(closeTag, 3);
+    // Hacker(openTag, 0);
+    // Hacker(closeTag, 0);
     Hacker(AboutMe ,2);
     Hacker(AboutMe2, 2);
     Hacker(AboutMe3,2);

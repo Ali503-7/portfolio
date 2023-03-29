@@ -6,9 +6,9 @@ function email() {
 
   const Email = useRef(null)
 
-  useEffect(() => {
-    Hacker(Email,1)
-  }, [])
+  // useEffect(() => {
+  //   // Hacker(Email,1)
+  // }, [])
   
 
   return (
