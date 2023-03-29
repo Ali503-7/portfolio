@@ -23,6 +23,11 @@ const characters = [...Array(26).keys()]
 const Hacker = (ref, speed) => {
   let iterations = 0;
   const interval = setInterval(() => {
+    if (!ref.current) {
+      clearInterval(interval);
+      return;
+    }
+
     ref.current.innerText = ref.current.innerText
       .split("")
       .map((letter, index) => {

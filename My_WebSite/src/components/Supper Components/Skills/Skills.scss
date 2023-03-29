@@ -1,0 +1,53 @@
+@import '../../../assets/Scss/Color/Colors.scss';
+
+.Skills {
+  flex-direction: column;
+  gap: 3em;
+  .header {
+    h1 {
+      color: $white;
+      font-family: $WIM;
+      font-size: 3em;
+    }
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 885px;
+    min-height: 285px;
+    gap: 55px;
+    .box {
+      transition: .3s;
+      cursor: pointer;
+      width: 180px;
+      height: 130px;
+      border: 1px solid $green;
+      border-radius: 1em;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1em;
+      font-family: $Email;
+      box-shadow: inset #64ffda 0px 0 20px 4px, #64ffda 0px 0px 10px 1px;
+
+      img {
+        transition: .3s;
+        width: 50px;
+      }
+      span {
+        letter-spacing: .05em;
+      }
+      &:hover {
+        transform: scale(1.1);
+        & img {
+          width: 90px;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

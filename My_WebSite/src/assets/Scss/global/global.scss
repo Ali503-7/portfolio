@@ -3,13 +3,19 @@
 .BG {
   background: linear-gradient(90deg, rgba(9, 158, 200, 0.205) 0%, rgba(13, 11, 15, 0.5) 101.79%);
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+@media (max-width: 600px) {
+  .BG {
+    height: fit-content;
+  }
 }
 
 .contaner {
