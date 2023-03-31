@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <section className="Home">
-      <div className="contaner">
+      <div className="container">
         <div className="top" ref={openTag} data-value="<Hi, My Name's>">
           {"<"}Hi, My Name's{">"}
         </div>

@@ -28,8 +28,11 @@ function Header() {
     <>
       <Nav showManu={showManu} />
       <header className="header">
-        <div className="contaner">
-          <div className="logo" onClick={() => whereAMi(pages.HOME_PAGE.NAME)}>
+        <div className="container">
+          <div
+            className="logo"
+            onClick={() => whereAMi(pages.HOME_PAGE.NAME, pages.HOME_PAGE.NUM)}
+          >
             <img
               src="/imgs/logs/ALimo_logo_with_the_Ali_bf9017df-bfbb-440f-a14f-7291e4ff8088.png"
               alt="#"
@@ -48,7 +51,9 @@ function Header() {
                   <li>
                     <a
                       href="#About"
-                      onClick={() => whereAMi(pages.HOME_PAGE.NAME)}
+                      onClick={() =>
+                        whereAMi(pages.HOME_PAGE.NAME, pages.HOME_PAGE.NUM)
+                      }
                     >
                       <span className="navNumber">01.</span>{" "}
                       <span data-value="About" ref={About}>
@@ -59,7 +64,9 @@ function Header() {
                   <li>
                     <a
                       href="#Skills"
-                      onClick={() => whereAMi(pages.SKILLS_PAGE.NAME)}
+                      onClick={() =>
+                        whereAMi(pages.SKILLS_PAGE.NAME, pages.SKILLS_PAGE.NUM)
+                      }
                     >
                       <span className="navNumber">02.</span>{" "}
                       <span data-value="Skills" ref={About}>

@@ -12,7 +12,7 @@ function Skills() {
   }, [])
 
   return (
-    <section className="Skills contaner">
+    <section className="Skills container">
       <div className="header">
         <h1 ref={Skills} data-value="My Skills">
           My Skills
@@ -76,7 +76,6 @@ function Skills() {
           <span>GIT</span>
         </div>
       </div>
-      <Email />
     </section>
   );
 }
