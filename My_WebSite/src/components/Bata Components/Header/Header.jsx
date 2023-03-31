@@ -4,7 +4,7 @@ import Nav from "../NavBar/nav";
 import { PageSwiper, pages } from "../../../App.jsx";
 import "./Header.scss";
 
-function Header() {
+function Header({ currentPage }) {
   const [showManu, setShowMenu] = useState(false);
   const { whereAMi } = useContext(PageSwiper);
 
@@ -56,7 +56,11 @@ function Header() {
                       }
                     >
                       <span className="navNumber">01.</span>{" "}
-                      <span data-value="About" ref={About}>
+                      <span
+                        data-value="About"
+                        ref={About}
+                        className={currentPage.HOME_PAGE.STATE ? "active" : ""}
+                      >
                         About
                       </span>
                     </a>
@@ -69,14 +73,20 @@ function Header() {
                       }
                     >
                       <span className="navNumber">02.</span>{" "}
-                      <span data-value="Skills" ref={About}>
+                      <span
+                        data-value="Skills"
+                        ref={About}
+                        className={
+                          currentPage.SKILLS_PAGE.STATE ? "active" : ""
+                        }
+                      >
                         Skills
                       </span>
                     </a>
                   </li>
                   <li>
                     <a href="#Experience">
-                      <span className="navNumber">03.</span>
+                      <span className="navNumber">03. </span>
                       <span data-value="Experience" ref={Experience}>
                         Experience
                       </span>

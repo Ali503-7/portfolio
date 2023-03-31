@@ -66,7 +66,7 @@ function App() {
   return (
     <PageSwiper.Provider value={{ whereAMi }}>
       <div className="BG">
-        <Header />
+        <Header currentPage={currentPage} />
         {currentPage.HOME_PAGE.STATE && <MainHome />}
         {currentPage.SKILLS_PAGE.STATE && <Skills />}
         <Swiper swipeFrom={swipeFrom} toWere={toWere} />
