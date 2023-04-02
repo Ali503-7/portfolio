@@ -1,6 +1,14 @@
-@import '../../../assets/Scss/Color/Colors.scss';
+@import "../../../assets/Scss/Color/Colors.scss";
 
 .Skills {
+  .open-tag,
+  .close-tag {
+    margin: 0em !important;
+    align-self: flex-start;
+    position: relative;
+    left: -80px;
+  }
+
   flex-direction: column;
   gap: 3em;
   .header {
@@ -8,6 +16,7 @@
       color: $white;
       font-family: $WIM;
       font-size: 3em;
+      line-height: 0.3em;
     }
   }
 
@@ -19,7 +28,7 @@
     min-height: 285px;
     gap: 55px;
     .box {
-      transition: .3s;
+      transition: 0.3s;
       cursor: pointer;
       width: 180px;
       height: 130px;
@@ -35,11 +44,11 @@
       box-shadow: inset #64ffda 0px 0 20px 4px, #64ffda 0px 0px 10px 1px;
 
       img {
-        transition: .3s;
+        transition: 0.3s;
         width: 50px;
       }
       span {
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
       }
       &:hover {
         transform: scale(1.1);

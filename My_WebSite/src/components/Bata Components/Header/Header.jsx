@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import Hacker from "../../../assets/JSAnimation/hackingTransition.js";
 import Nav from "../NavBar/nav";
-import { PageSwiper, pages } from "../../../App.jsx";
+import { PageSwiper } from "../../../App.jsx";
 import "./Header.scss";
 
 function Header({ currentPage }) {
@@ -31,7 +31,7 @@ function Header({ currentPage }) {
         <div className="container">
           <div
             className="logo"
-            onClick={() => whereAMi(pages.HOME_PAGE.NAME, pages.HOME_PAGE.NUM)}
+            onClick={() => whereAMi(currentPage.HOME_PAGE.NAME, currentPage.HOME_PAGE.NUM)}
           >
             <img
               src="/imgs/logs/ALimo_logo_with_the_Ali_bf9017df-bfbb-440f-a14f-7291e4ff8088.png"
@@ -52,7 +52,7 @@ function Header({ currentPage }) {
                     <a
                       href="#About"
                       onClick={() =>
-                        whereAMi(pages.HOME_PAGE.NAME, pages.HOME_PAGE.NUM)
+                        whereAMi(currentPage.HOME_PAGE.NAME, currentPage.HOME_PAGE.NUM)
                       }
                     >
                       <span className="navNumber">01.</span>{" "}
@@ -69,7 +69,7 @@ function Header({ currentPage }) {
                     <a
                       href="#Skills"
                       onClick={() =>
-                        whereAMi(pages.SKILLS_PAGE.NAME, pages.SKILLS_PAGE.NUM)
+                        whereAMi(currentPage.SKILLS_PAGE.NAME, currentPage.SKILLS_PAGE.NUM)
                       }
                     >
                       <span className="navNumber">02.</span>{" "}
@@ -85,17 +85,45 @@ function Header({ currentPage }) {
                     </a>
                   </li>
                   <li>
-                    <a href="#Experience">
+                    <a
+                      href="#Experience"
+                      onClick={() =>
+                        whereAMi(
+                          currentPage.EXPERIENCE_PAGE.NAME,
+                          currentPage.EXPERIENCE_PAGE.NUM
+                        )
+                      }
+                    >
                       <span className="navNumber">03. </span>
-                      <span data-value="Experience" ref={Experience}>
+                      <span
+                        data-value="Experience"
+                        ref={Experience}
+                        className={
+                          currentPage.EXPERIENCE_PAGE.STATE ? "active" : ""
+                        }
+                      >
                         Experience
                       </span>
                     </a>
                   </li>
                   <li>
-                    <a href="#Contact">
+                    <a
+                      href="#Contact"
+                      onClick={() =>
+                        whereAMi(
+                          currentPage.CONTACT_PAGE.NAME,
+                          currentPage.CONTACT_PAGE.NUM
+                        )
+                      }
+                    >
                       <span className="navNumber">04.</span>
-                      <span data-value="Contact" ref={Contact}>
+                      <span
+                        data-value="Contact"
+                        ref={Contact}
+                        className={
+                          currentPage.CONTACT_PAGE.STATE ? "active" : ""
+                        }
+                      >
                         Contact
                       </span>
                     </a>

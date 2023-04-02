@@ -23,7 +23,7 @@ function Home() {
   return (
     <section className="Home">
       <div className="container">
-        <div className="top" ref={openTag} data-value="<Hi, My Name's>">
+        <div className="open-tag" ref={openTag} data-value="<Hi, My Name's>">
           {"<"}Hi, My Name's{">"}
         </div>
         <div className="mid">
@@ -42,7 +42,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="bottom" ref={closeTag} data-value="</Hi, My Name's>">
+        <div className="close-tag" ref={closeTag} data-value="</Hi, My Name's>">
           {"<"}/Hi, My Name's{">"}
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Hacker from "../../../assets/JSAnimation/hackingTransition";
-import Email from "../../Bata Components/My_email/email";
 import "./Skills.scss";
 
 function Skills() {
@@ -17,6 +16,9 @@ function Skills() {
         <h1 ref={Skills} data-value="My Skills">
           My Skills
         </h1>
+      </div>
+      <div className="open-tag">
+        {"<"}My Skills{">"}
       </div>
       <div className="boxes">
         <div className="box">
@@ -75,6 +77,9 @@ function Skills() {
           />
           <span>GIT</span>
         </div>
+      </div>
+      <div className="close-tag">
+        {"<"}/My Skills{">"}
       </div>
     </section>
   );

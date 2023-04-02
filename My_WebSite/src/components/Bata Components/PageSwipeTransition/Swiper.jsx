@@ -1,8 +1,8 @@
 import React from 'react'
 import './Swiper.scss'
 
-function Swiper({ swipeFrom, toWere }) {
-  return <div className={`swipe ${swipeFrom}`}>{toWere}</div>;
+function Swiper({ swipeFrom, toWare }) {
+  return <div className={`swipe ${swipeFrom}`}>{toWare}</div>;
 }
 
 export default Swiper

@@ -8,20 +8,6 @@
     flex-direction: column;
     align-items: flex-start;
 
-
-    .top {
-      margin-bottom: 2.5em;
-    }
-    .bottom {
-      margin-top: 2.5em;
-    }
-    .top ,.bottom {
-      color: $green;
-      opacity: .3;
-      font-family: $WIM;
-      z-index: -1;
-    }
-
     .mid {
       margin-left: 3em;
 
