@@ -95,7 +95,7 @@ function App() {
     return () => {
       setTimeout(() => {
         setSwipeFrom("");
-      }, 2000);
+      }, 1900);
     };
   }, [swipe]);
 
