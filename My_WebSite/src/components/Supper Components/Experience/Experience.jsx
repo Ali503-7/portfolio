@@ -19,12 +19,12 @@ function Experience() {
             <img src={img.url} alt="not found" />
             <div className="code">
               <a href={img.code} target="_blank">
-                <button>Code</button>
+                Code
               </a>
             </div>
             <div className="live">
               <a href={img.live} target="_blank">
-                <button>Live</button>
+                Live
               </a>
             </div>
           </div>
@@ -38,32 +38,15 @@ function Experience() {
 
   return (
     <section className="experience container">
-      {/* <div className="header">
+      <div className="header">
         <h1 ref={experience} data-value="Experience">
           Experience
         </h1>
-      </div> */}
+      </div>
       <div className="open-tag">
         {"<"}My Work{">"}
       </div>
       <div className="body">
-        <div className="selector">
-          <div className="box" about="All">
-            All
-          </div>
-          <div className="box" about="Html-Css">
-            Html-Css
-          </div>
-          <div className="box" about="Scss">
-            Scss
-          </div>
-          <div className="box" about="React">
-            React
-          </div>
-          <div className="box" about="Api">
-            Api
-          </div>
-        </div>
         <div className="workSection">
           <CustomScrollDiv>
             {Project()}
