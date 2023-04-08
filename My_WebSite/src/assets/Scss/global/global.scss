@@ -42,14 +42,14 @@
 }
 
 .button {
-  button {
+  button,input {
     transition: 0.5s;
     font-family: $Email;
     background-color: transparent;
     cursor: pointer;
     color: $green;
     border-radius: 3px;
-    border: 1px solid $green;
+    border: 1px solid $green !important;
     padding: 7px 15px;
 
     &:hover {

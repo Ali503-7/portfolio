@@ -1,11 +1,13 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Email from "../../Bata Components/My_email/email";
 import Hacker from "../../../assets/JSAnimation/hackingTransition";
 import Social from "../../Bata Components/Social/social";
+import Form from "../../Bata Components/Form/form";
 import "./Contact.scss";
 
 function Contact() {
-  const header = useRef(); +
+  const header = useRef();
+  const [sendMassage, setSendMassage] = useState(false);
 
   useEffect(() => {
     Hacker(header, 5);
@@ -31,11 +33,14 @@ function Contact() {
           <p>thanks😘</p>
         </div>
         <div className="send-massage button">
-          <button>Send Massage</button>
+          <button onClick={() => setSendMassage((pre) => !pre)}>
+            Send Massage
+          </button>
         </div>
       </div>
       <Email />
       <Social />
+      <Form sendMassage={sendMassage} setSendMassage={setSendMassage} />
     </section>
   );
 }

@@ -6,6 +6,7 @@
   left: -0px;
   bottom: 0px;
   flex-direction: column;
+  align-items: center;
   padding: 0px;
   width: 11em;
   gap: 3.5em;
@@ -45,5 +46,22 @@
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .social{
+    gap: 1.1em;
+    left: -50px;
+    .line {
+      height: 3em;
+    }
+    .social-links {
+      gap: 1em;
+    }
+    svg,img {
+      width: 20px !important;
+      height: 20px !important;
+    }
   }
 }
