@@ -1,0 +1,21 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+
+.contact {
+  flex-direction: column;
+  gap: 5em;
+  margin: auto auto;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    .contact-msg {
+      color: $lightest-slate;
+      font-family: $My-Name;
+      max-width: 1000px;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+}

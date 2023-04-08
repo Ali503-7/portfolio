@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Hacker from "../../../assets/JSAnimation/hackingTransition";
 import "./Home.scss";
 
 function Home() {
+
 
   const MyName = useRef(null);
   const AboutMe = useRef(null);
@@ -18,7 +19,7 @@ function Home() {
     Hacker(AboutMe ,2);
     Hacker(AboutMe2, 2);
     Hacker(AboutMe3,2);
-  });
+  },[]);
 
   return (
     <section className="Home">

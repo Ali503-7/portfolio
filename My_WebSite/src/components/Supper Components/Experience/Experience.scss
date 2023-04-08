@@ -5,15 +5,6 @@
   padding-top: 0px;
   padding-bottom: 0px;
 
-  .header {
-    h1 {
-      color: $white;
-      font-size: 3em;
-      font-family: $Email;
-      line-height: 0.3em;
-      margin-bottom: 0.3em;
-    }
-  }
 
   .body {
     display: flex;
@@ -130,6 +121,10 @@
           color: $lightest-slate;
           font-size: 1.5em;
           font-family: $Email;
+
+          a {
+            color: unset;
+          }
         }
       }
     }

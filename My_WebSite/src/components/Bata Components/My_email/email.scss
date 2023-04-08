@@ -6,7 +6,7 @@
   right: -0px;
   bottom: 0px;
   flex-direction: column;
-  padding: 0px !important;
+  padding: 0px;
   width: 11em;
 
   .line {
@@ -30,7 +30,7 @@
       font-weight: 100;
       letter-spacing: 5px;
       font-size: larger;
-      animation: upAndDown 2s infinite alternate-reverse ease-in-out;
+      animation: upAndDownE 2s infinite alternate-reverse ease-in-out;
     }
 
     &:hover {
@@ -43,7 +43,7 @@
   }
 }
 
-@keyframes upAndDown {
+@keyframes upAndDownE {
   0% {
     transform: translateX(0px);
   }

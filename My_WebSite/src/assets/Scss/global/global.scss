@@ -21,7 +21,7 @@
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 30px 20px;
   display: flex;
   align-items: center;
@@ -61,4 +61,14 @@
 body {
   background-color: black;
   z-index: 1;
+}
+
+.header {
+  h1 {
+    color: $white;
+    font-size: 3em;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 0.3em;
+    margin-bottom: 0.3em;
+  }
 }

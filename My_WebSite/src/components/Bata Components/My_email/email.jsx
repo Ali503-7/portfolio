@@ -1,30 +1,15 @@
-import React, { useRef, useEffect } from 'react'
-import Hacker from '../../../assets/JSAnimation/hackingTransition'
-import './email.scss'
+import React, { useRef } from "react";
+import "./email.scss";
 
 function email() {
-
-  const Email = useRef(null)
-
-  // useEffect(() => {
-  //   // Hacker(Email,1)
-  // }, [])
-  
-
   return (
     <div className="Email container">
       <span className="email">
-        <a
-          href="mailto:alimoali576@gmail.com"
-          ref={Email}
-          data-value="alimoali576@gmail.com"
-        >
-          alimoali354@gmail.com
-        </a>
+        <a href="mailto:alimoali576@gmail.com">alimoali354@gmail.com</a>
       </span>
       <span className="line"></span>
     </div>
   );
 }
 
-export default email
+export default email;

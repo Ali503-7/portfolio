@@ -29,7 +29,10 @@ function Experience() {
             </div>
           </div>
           <div className="name">
-            <span>{img.name}</span>
+            <span>
+              {" "}
+              <a href={img.live}>{img.name}</a>
+            </span>
           </div>
         </div>
       );
@@ -48,9 +51,7 @@ function Experience() {
       </div>
       <div className="body">
         <div className="workSection">
-          <CustomScrollDiv>
-            {Project()}
-          </CustomScrollDiv>
+          <CustomScrollDiv>{Project()}</CustomScrollDiv>
         </div>
       </div>
       <div className="close-tag">
