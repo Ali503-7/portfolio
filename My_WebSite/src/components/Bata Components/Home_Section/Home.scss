@@ -33,9 +33,10 @@
 
 @media (max-width: 600px) {
   .Home {
-    margin: 50px 0px auto 0px;
+    margin: auto auto;
     .mid {
       margin-left: 1.5em !important;
+      text-align: center;
     }
     .name {
       font-size: 2.5em !important;

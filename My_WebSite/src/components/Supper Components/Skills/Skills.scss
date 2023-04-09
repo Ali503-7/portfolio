@@ -1,18 +1,15 @@
 @import "../../../assets/Scss/Color/Colors.scss";
 
 .Skills {
+  flex-direction: column;
+  gap: 2.7em;
   .open-tag,
   .close-tag {
     margin: 0em !important;
     align-self: flex-start;
     position: relative;
     left: -80px;
-    
   }
-
-  flex-direction: column;
-  gap: 3em;
-
 
   .boxes {
     display: flex;

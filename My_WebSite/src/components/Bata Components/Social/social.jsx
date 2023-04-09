@@ -15,7 +15,7 @@ function social() {
         </a>
         <a href="https://www.frontendmentor.io/profile/Ali503-7">
           <img
-            src="../../../../public/imgs/logs/Social/frontend-mentor-logo-DD85EFE0E9-seeklogo.com.png"
+            src="/imgs/logs/Social/frontend-mentor-logo-DD85EFE0E9-seeklogo.com.png"
             alt=""
           />
         </a>

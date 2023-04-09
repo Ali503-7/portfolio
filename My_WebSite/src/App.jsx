@@ -1,11 +1,22 @@
-import React, { useReducer, useState, useEffect } from "react";
+import React, { useReducer, useState, useEffect, lazy } from "react";
 import "./css/App.scss";
-import Home from "./components/Bata Components/Home_Section/Home";
-import Skills from "./components/Supper Components/Skills/Skills";
-import Header from "./components/Bata Components/Header/Header";
-import Swiper from "./components/Bata Components/PageSwipeTransition/Swiper";
-import Experience from "./components/Supper Components/Experience/Experience";
-import Contact from "./components/Supper Components/Contact/Contact";
+const Home = lazy(() =>
+  import("./components/Bata Components/Home_Section/Home")
+);
+const Skills = lazy(() =>
+  import("./components/Supper Components/Skills/Skills")
+);
+const Header = lazy(() => import("./components/Bata Components/Header/Header"));
+const Swiper = lazy(() =>
+  import("./components/Bata Components/PageSwipeTransition/Swiper")
+);
+const Experience = lazy(() =>
+  import("./components/Supper Components/Experience/Experience")
+);
+const Contact = lazy(() =>
+  import("./components/Supper Components/Contact/Contact")
+);
+
 
 const PageSwiper = React.createContext();
 
@@ -83,7 +94,7 @@ function App() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       dispatch({ type: toWare });
-    }, 1000);
+    }, 500);
     return () => clearTimeout(timeoutId);
   }, [toWare]);
 

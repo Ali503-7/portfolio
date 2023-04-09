@@ -41,6 +41,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .open-tag,.close-tag {
+    display: none;
+  }
+}
+
 .button {
   button,input {
     transition: 0.5s;
@@ -72,3 +78,4 @@ body {
     margin-bottom: 0.3em;
   }
 }
+

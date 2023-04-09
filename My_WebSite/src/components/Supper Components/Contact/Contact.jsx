@@ -3,6 +3,8 @@ import Email from "../../Bata Components/My_email/email";
 import Hacker from "../../../assets/JSAnimation/hackingTransition";
 import Social from "../../Bata Components/Social/social";
 import Form from "../../Bata Components/Form/form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Contact.scss";
 
 function Contact() {
@@ -21,6 +23,9 @@ function Contact() {
         </h1>
       </div>
       <div className="body">
+        <div className="open-tag">
+          {"<"}Contact{">"}
+        </div>
         <div className="contact-msg">
           <p>
             Thanks for reaching out! Please provide your name, email, and
@@ -32,10 +37,29 @@ function Contact() {
           </p>
           <p>thanks😘</p>
         </div>
+        <div className="social-links">
+          <div className="social-links">
+            <a href="https://www.linkedin.com/in/ali-mohamed-b351a6206/">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+            <a href="https://github.com/Ali503-7">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://www.frontendmentor.io/profile/Ali503-7">
+              <img
+                src="/imgs/logs/Social/frontend-mentor-logo-DD85EFE0E9-seeklogo.com.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
         <div className="send-massage button">
           <button onClick={() => setSendMassage((pre) => !pre)}>
             Send Massage
           </button>
+        </div>
+        <div className="close-tag">
+          {"<"}/Contact{">"}
         </div>
       </div>
       <Email />
