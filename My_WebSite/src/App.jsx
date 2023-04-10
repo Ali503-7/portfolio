@@ -92,10 +92,9 @@ function App() {
   }
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    setTimeout(() => {
       dispatch({ type: toWare });
-    }, 500);
-    return () => clearTimeout(timeoutId);
+    }, 700);
   }, [toWare]);
 
   useEffect(() => {

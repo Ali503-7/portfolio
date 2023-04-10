@@ -29,13 +29,9 @@ function Contact() {
         <div className="contact-msg">
           <p>
             Thanks for reaching out! Please provide your name, email, and
-            message
+            message so I can reply within 24 hours. Contact me on social media
+            if you prefer. thanks😘
           </p>
-          <p>
-            so I can reply within 24 hours. Contact me on social media if you
-            prefer.
-          </p>
-          <p>thanks😘</p>
         </div>
         <div className="social-links">
           <div className="social-links">

@@ -6,6 +6,7 @@ import "./Header.scss";
 
 function Header({ currentPage }) {
   const [showManu, setShowMenu] = useState(false);
+  const [clicked, setClicked] = useState(false)
   const { whereAMi } = useContext(PageSwiper);
 
   const About = useRef(null);
@@ -26,12 +27,14 @@ function Header({ currentPage }) {
 
   return (
     <>
-      <Nav showManu={showManu} />
+      <Nav showManu={showManu} Toggle={Toggle} />
       <header className="header">
         <div className="container">
           <div
             className="logo"
-            onClick={() => whereAMi(currentPage.HOME_PAGE.NAME, currentPage.HOME_PAGE.NUM)}
+            onClick={() =>
+              whereAMi(currentPage.HOME_PAGE.NAME, currentPage.HOME_PAGE.NUM)
+            }
           >
             <img
               src="/imgs/logs/ALimo_logo_with_the_Ali_bf9017df-bfbb-440f-a14f-7291e4ff8088.png"
@@ -40,7 +43,13 @@ function Header({ currentPage }) {
           </div>
 
           <div className="right">
-            <div className="burger" onClick={() => Toggle()}>
+            <div
+              className={clicked ? "burger burger-clicked" : "burger"}
+              onClick={() => {
+                Toggle();
+                setClicked((pre) => !pre);
+              }}
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -52,7 +61,10 @@ function Header({ currentPage }) {
                     <a
                       href="#About"
                       onClick={() =>
-                        whereAMi(currentPage.HOME_PAGE.NAME, currentPage.HOME_PAGE.NUM)
+                        whereAMi(
+                          currentPage.HOME_PAGE.NAME,
+                          currentPage.HOME_PAGE.NUM
+                        )
                       }
                     >
                       <span className="navNumber">01.</span>{" "}
@@ -69,7 +81,10 @@ function Header({ currentPage }) {
                     <a
                       href="#Skills"
                       onClick={() =>
-                        whereAMi(currentPage.SKILLS_PAGE.NAME, currentPage.SKILLS_PAGE.NUM)
+                        whereAMi(
+                          currentPage.SKILLS_PAGE.NAME,
+                          currentPage.SKILLS_PAGE.NUM
+                        )
                       }
                     >
                       <span className="navNumber">02.</span>{" "}

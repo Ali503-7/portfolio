@@ -22,6 +22,12 @@
   animation: From-right 2s forwards;
 }
 
+@media (max-width: 400px) {
+  .swipe {
+    font-size: 3em;
+  }
+}
+
 @keyframes From-left {
   0% {
   }

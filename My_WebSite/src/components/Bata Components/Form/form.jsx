@@ -1,12 +1,19 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import emailjs, { send } from "@emailjs/browser";
 import "./form.scss";
 
-function form({sendMassage, setSendMassage}) {
+function form({ sendMassage, setSendMassage }) {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const { user_name, user_email, massage } = e.target.elements;
+
+    if (!user_name.value || !user_email.value || !massage.value) {
+      alert("Please fill in all fields before sending.");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -18,7 +25,7 @@ function form({sendMassage, setSendMassage}) {
       .then(
         (result) => {
           console.log(result.text);
-          e.target.reset()
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -26,13 +33,11 @@ function form({sendMassage, setSendMassage}) {
       );
   };
 
-  const show = {
-    transform: "translateY(0%)"
-  }
-
   return (
-    <section className={sendMassage? "form show" : "form hidden"}>
-      <div className="exit" onClick={() => setSendMassage(pre => !pre)}>x</div>
+    <section className={sendMassage ? "form show" : "form hidden"}>
+      <div className="exit" onClick={() => setSendMassage((pre) => !pre)}>
+        x
+      </div>
       <form ref={form} onSubmit={sendEmail}>
         <label htmlFor="name" for="name">
           Your Name

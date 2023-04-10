@@ -45,7 +45,6 @@
           cursor: pointer;
           &:hover {
             color: $blue;
-            transform: translateY(-100px);
           }
         }
       }
@@ -58,7 +57,7 @@
     font-size: .7em;
   }
 }
-@media (min-width: 1001px) {
+@media (min-width: 1151px) {
   .social-links {
     display: none;
   }
