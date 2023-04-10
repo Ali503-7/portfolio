@@ -6,7 +6,7 @@ import "./Header.scss";
 
 function Header({ currentPage }) {
   const [showManu, setShowMenu] = useState(false);
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(false);
   const { whereAMi } = useContext(PageSwiper);
 
   const About = useRef(null);
@@ -23,6 +23,7 @@ function Header({ currentPage }) {
 
   function Toggle() {
     setShowMenu((pre) => !pre);
+    setClicked(pre => !pre)
   }
 
   return (
@@ -47,7 +48,7 @@ function Header({ currentPage }) {
               className={clicked ? "burger burger-clicked" : "burger"}
               onClick={() => {
                 Toggle();
-                setClicked((pre) => !pre);
+                // setClicked((pre) => !pre);
               }}
             >
               <span></span>

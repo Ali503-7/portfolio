@@ -1,11 +1,11 @@
-@import '../../../assets/Scss/Color/Colors.scss';
+@import "../../../assets/Scss/Color/Colors.scss";
 
 .form {
-  transition: .5s;
+  transition: 0.5s;
   position: fixed;
   width: 100%;
   height: 100%;
-  top:0;
+  top: 0;
   z-index: 100;
   background-color: $lightest-navy;
   display: flex;
@@ -14,7 +14,7 @@
   transform: translateY(100%);
 
   .exit {
-    transition: .5s;
+    transition: 0.5s;
     position: absolute;
     font-size: 3em;
     color: $white;
@@ -57,7 +57,7 @@
       background-color: transparent;
       color: $white;
       margin-bottom: 1em;
-    } 
+    }
   }
 }
 
@@ -87,7 +87,8 @@
 @media (max-width: 430px) {
   .form {
     z-index: 10000;
-    input,textarea {
+    input,
+    textarea {
       width: 250px !important;
     }
     .exit {

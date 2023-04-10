@@ -14,7 +14,7 @@ function Experience() {
   const Project = () => {
     return imgs.map((img) => {
       return (
-        <div className="Project">
+        <div className="Project" key={img.name}>
           <div className="img">
             <img src={img.url} alt="not found" />
             <div className="code">
@@ -31,7 +31,9 @@ function Experience() {
           <div className="name">
             <span>
               {" "}
-              <a href={img.live}>{img.name}</a>
+              <a href={img.live} target="_blank">
+                {img.name}
+              </a>
             </span>
           </div>
         </div>

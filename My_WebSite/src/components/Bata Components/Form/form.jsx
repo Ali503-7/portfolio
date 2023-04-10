@@ -39,15 +39,15 @@ function form({ sendMassage, setSendMassage }) {
         x
       </div>
       <form ref={form} onSubmit={sendEmail}>
-        <label htmlFor="name" for="name">
+        <label htmlFor="name" htmlFor="name">
           Your Name
         </label>
         <input type="text" name="user_name" id="name" />
-        <label htmlFor="email" for="email">
+        <label htmlFor="email" htmlFor="email">
           Your Email
         </label>
         <input type="email" name="user_email" id="email" />
-        <label htmlFor="massage" for="massage">
+        <label htmlFor="massage" htmlFor="massage">
           Your Massage
         </label>
         <textarea name="massage" id="massage" cols="30" rows="10"></textarea>

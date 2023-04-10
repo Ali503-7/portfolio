@@ -3,12 +3,11 @@ import Hacker from "../../../assets/JSAnimation/hackingTransition";
 import "./Skills.scss";
 
 function Skills() {
-
-  const Skills = useRef()
+  const Skills = useRef();
 
   useEffect(() => {
-    Hacker(Skills, 3)
-  }, [])
+    Hacker(Skills, 3);
+  }, []);
 
   return (
     <section className="Skills container">

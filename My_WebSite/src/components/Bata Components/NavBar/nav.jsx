@@ -16,7 +16,7 @@ function Nav({ showManu, Toggle }) {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {      
+    setTimeout(() => {
       if (!showManu) {
         setZindax({ zIndex: -1 });
       }

@@ -1,7 +1,5 @@
-@import '../../../assets/Scss/Color/Colors.scss';
-@import '../../../assets/Scss/global/global.scss';
-
-
+@import "../../../assets/Scss/Color/Colors.scss";
+@import "../../../assets/Scss/global/global.scss";
 
 .header {
   .container {
@@ -43,10 +41,9 @@
           width: 25px;
         }
       }
-
     }
   }
-  
+
   .links {
     display: flex;
     align-items: center;
@@ -61,7 +58,7 @@
         gap: 2em;
 
         a {
-          transition: .5s;
+          transition: 0.5s;
           text-decoration: none;
           color: $white;
           font-size: $F-s;
@@ -72,13 +69,11 @@
 
           .navNumber {
             color: $green;
-            margin-right: .1em;
+            margin-right: 0.1em;
           }
         }
       }
-
     }
-
   }
 }
 
@@ -88,11 +83,11 @@
 
 .burger-clicked {
   & span:nth-child(1) {
-    width: 40px;
+    width: 40px !important;
   }
 
   & span:nth-child(3) {
-    width: 5px;
+    width: 5px !important;
   }
 }
 

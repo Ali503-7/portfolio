@@ -42,13 +42,15 @@
 }
 
 @media (max-width: 1150px) {
-  .open-tag,.close-tag {
+  .open-tag,
+  .close-tag {
     display: none;
   }
 }
 
 .button {
-  button,input {
+  button,
+  input {
     transition: 0.5s;
     font-family: $Email;
     background-color: transparent;
@@ -78,4 +80,3 @@ body {
     margin-bottom: 0.3em;
   }
 }
-

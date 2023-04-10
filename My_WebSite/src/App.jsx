@@ -17,7 +17,6 @@ const Contact = lazy(() =>
   import("./components/Supper Components/Contact/Contact")
 );
 
-
 const PageSwiper = React.createContext();
 
 const pages = {
@@ -85,10 +84,10 @@ function App() {
   const [swipeFrom, setSwipeFrom] = useState("");
   const [toWare, setToWare] = useState("");
 
+
   function whereAMi(place, number) {
     setToWare(place);
     setSwipe(number);
-    console.log(number)
   }
 
   useEffect(() => {
