@@ -38,7 +38,7 @@
   &.show {
     z-index: 1000;
     .bar:nth-child(odd) {
-      transform: translateX(0%); 
+      transform: translateX(0%);
     }
 
     .bar:nth-child(even) {
